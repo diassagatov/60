@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивная картинка</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center; /* центрирование по горизонтали */
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Для экранов шире 768px (компьютеры) */
+        @media (min-width: 768px) {
+            img {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="image.jpg" alt="Картинка">
+</div>
+
+</body>
+</html>
